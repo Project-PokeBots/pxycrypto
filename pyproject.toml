@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "pxycrypto"
+version = "0.2.0"
+description = ""
+authors = ["Z1R343L <jan2705g@gmail.com>"]
+packages = [
+    { include = "pxycrypto" },
+    { include = "pxycrypto/**/*.py" },
+]
+include = ["pxycrypto/assets/*.json"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
