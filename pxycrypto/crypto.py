@@ -2,13 +2,13 @@ from __future__ import annotations
 
 from pathlib import PurePath
 
-from .enums import enums
 from .converters import ensure_bytearray
+from .enums import enums
 from .types import InputType
 
 if __import__("typing", fromlist=["TYPE_CHECKING"]).TYPE_CHECKING:
+    from io import BufferedRandom, BufferedReader, BytesIO
     from typing import Union
-    from io import BytesIO, BufferedRandom, BufferedReader
 
 
 class Pokecrypto(object):

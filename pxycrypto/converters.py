@@ -7,7 +7,7 @@ from re import compile, match
 from .types import InputType
 
 if __import__("typing", fromlist=["TYPE_CHECKING"]).TYPE_CHECKING:
-    from io import BufferedRandom, BytesIO, BufferedReader
+    from io import BufferedRandom, BufferedReader, BytesIO
     from typing import Optional, Union
 
 try:
